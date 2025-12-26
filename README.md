@@ -1,71 +1,56 @@
-# Hi there, I’m Vrushabh Bodarya 👋
+# Hi, I'm Vrushabh Bodarya 👋 
 
-*Currently pursuing a Master’s in Applied Data Intelligence at San Jose State University.*
-
----
-
-##  About Me
-I’m passionate about turning data into insights through:
-- Applied Data Science & Analytics  
-- Interactive Dashboards (Streamlit, Power BI)  
-- Data Visualization (Matplotlib, Plotly, Seaborn)  
-- Python-based Data Cleaning & ETL workflows  
-
-I enjoy open-source collaborations and building projects that bridge analytics, storytelling, and impact.
+*Currently pursuing a Master’s in Applied Data Intelligence @ San Jose State University*
 
 ---
 
-##  Featured Projects
+## 🚀 About Me
+I am a Software Engineer focused on building **high-performance distributed systems**, **Cloud-Native infrastructure**, and **Intelligent Observability** tools. My background bridges the gap between scalable backend engineering and production-grade AI intelligence.
 
-### *Google Search Analysis*
-- Explored global trends with *PyTrends, visualized via **Plotly* and *Seaborn*.  
-- Built to uncover real-time interest patterns.  
-Latest update: July 2025
-
-### *Data Cleaning & Preprocessing Project*
-- Hands-on project using *pandas* for robust data cleaning and pipeline prep.  
-Latest update: July 2025
-
-### *Global Sales Insights & Forecasting (Power BI)*
-- Created interactive dashboards with forecasting functionality for sales data.  
-Latest update: July 2025
-
-### *Spotify Dashboard (Power BI)*
-- Visualized track popularity and audio features like danceability & energy.  
-Latest update: May 2025
-
-### *Walmart Sales Dashboards*
-1. *EDA on Walmart Sales* — Cleaned and visualized sales data with Python (Apr 2025)  
-2. *Power BI Dashboard* — Performance insights for departments and stores (Apr 2025)
-
-### *Interactive Breast Cancer Risk Assessment (Streamlit)*
-- Built a full-stack UI with logistic regression and real-time user input via *Streamlit*.  
-Latest update: Apr 2025
-
-### *Galactic Insights (Astronomical Data)*
-- Processed FITS images and engaged in astronomy-based data normalization and visualization.  
-Latest update: Sept 2024
+- 🔭 I’m currently building **Sentinel**, an AIOps dashboard for real-time anomaly detection.
+- ☁️ I specialize in **Microservices**, **Kafka-based async processing**, and **Cloud-Native deployments (AWS EKS)**.
+- ⚡ Fun fact: I once reduced travel platform search latency by **92%** through aggressive caching and indexing.
 
 ---
 
-##  Tech Stack & Tools
-| Category            | Tools & Technologies                                              |
-|---------------------|------------------------------------------------------------------|
-| Programming         | Python, pandas, NumPy                                           |
-| Visualization       | Plotly, Seaborn, Matplotlib                                    |
-| Dashboards          | Power BI, Streamlit                                             |
-| Data Handling       | Data cleaning, EDA, ETL, forecasting models                     |
-| Domains             | Retail sales, healthcare (breast cancer), astronomy, music data |
+## 🛠️ Tech Stack & Tools
+| Category | Technologies |
+| :--- | :--- |
+| **Languages** | Java, Python, C#, JavaScript, TypeScript, SQL, Go |
+| **Backend** | Microservices, API Design (REST/gRPC), Kafka, Redis, FastAPI |
+| **Cloud & DevOps** | Docker, Kubernetes (EKS), AWS (EC2, S3, Lambda), Terraform, GitHub Actions |
+| **Databases** | PostgreSQL, MongoDB, MySQL, DynamoDB, Redis |
+| **AI & Observability** | RAG Pipelines, Prometheus, Scikit-learn, LSTMs, Gemini API |
 
 ---
 
-##  Let’s Connect
-- * LinkedIn:* [linkedin.com/in/vrushabh-bodarya-a36548297](https://www.linkedin.com/in/vrushabh-bodarya-a36548297) 10  
-- * Open to:* Collaboration, mentorship, and data-driven projects
+## 🏆 Featured Engineering Projects
 
-Looking forward to building meaningful solutions—let’s connect!
+### [Sentinel: Cloud-Native AIOps Dashboard](https://github.com/vrushabh05/sentinel-aiops)
+*Intelligent observability platform for real-time system health.*
+- **Impact:** Reduced alert noise by **60%** and MTTD by **45%** using LSTM-based anomaly detection.
+- **Tech:** FastAPI, Prometheus, Redis, Scikit-learn, WebSockets, React.
 
-<!---
-vrushabh05/vrushabh05 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+### [Kayak Simulation: Distributed Travel Platform](https://github.com/vrushabh05/kayak-simulation)
+*8-microservice architecture simulating a global travel booking engine.*
+- **Impact:** Optimized workflows for 99.9% uptime and **sub-40ms latency** using Kafka and Redis.
+- **Tech:** Java, Kafka, AWS EKS, MongoDB, Redis, GitHub Actions (CI/CD).
+
+### [MealPilot: MCP Tool Server](https://github.com/vrushabh05/mealpilot-mcp)
+*Python-based Model Context Protocol server for LLM agent tool orchestration.*
+- **Tech:** Python, Pydantic, JSON Schema, Gemini API.
+- **Focus:** Contract-first API design and robust error handling for AI agents.
+
+---
+
+## 📊 GitHub Stats
+![Vrushabh's Stats](https://github-readme-stats.vercel.app/api?username=vrushabh05&show_icons=true&theme=transparent)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vrushabh05&layout=compact&theme=transparent)
+
+---
+
+## 📫 Let's Connect
+- **LinkedIn:** [linkedin.com/in/vrushabh](https://linkedin.com/in/vrushabh)
+- **Email:** [vrushabhbodaryaait@gmail.com](mailto:vrushabhbodaryaait@gmail.com)
+
+*"Building the infrastructure that makes intelligence scalable."*
