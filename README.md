@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Vrushabh Bodarya 👋
+# Hi, I'm Vrushabh Bodarya.....
 
 ### Data Science × Machine Learning × Generative AI
 
