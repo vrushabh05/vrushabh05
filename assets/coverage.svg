@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="490" viewBox="0 0 880 490" role="img" aria-label="Role coverage matrix: projects against target roles">
+<title>Role coverage matrix: projects against target roles</title>
+<style>
+:root{--bg:#fcfcfb;--card:#f3f2ef;--ink:#0b0b0b;--muted:#52514e;--line:#d8d6d0}
+@media (prefers-color-scheme: dark){:root{--bg:#1a1a19;--card:#262624;--ink:#f0efec;--muted:#c3c2b7;--line:#3b3a37}}
+text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;fill:var(--ink)}
+.h{font-size:16px;font-weight:600}.s{font-size:12px;fill:var(--muted)}
+.big{font-size:30px;font-weight:700}.l{font-size:12.5px}.r{font-size:11px;fill:var(--muted)}
+</style>
+<rect width="880" height="490" rx="12" fill="var(--bg)"/>
+<text x="24" y="30" class="h">Where each project covers my target roles</text>
+<text x="24" y="47" class="s">Filled dot = main focus. Ring = supporting skill.</text>
+<text x="450" y="60" class="l" text-anchor="middle" font-weight="600">AI</text>
+<text x="450" y="74" class="l" text-anchor="middle" font-weight="600">Engineering</text>
+<text x="544" y="60" class="l" text-anchor="middle" font-weight="600">ML</text>
+<text x="544" y="74" class="l" text-anchor="middle" font-weight="600">Engineering</text>
+<text x="638" y="60" class="l" text-anchor="middle" font-weight="600">Data</text>
+<text x="638" y="74" class="l" text-anchor="middle" font-weight="600">Science</text>
+<text x="732" y="60" class="l" text-anchor="middle" font-weight="600">Data</text>
+<text x="732" y="74" class="l" text-anchor="middle" font-weight="600">Analytics</text>
+<text x="826" y="60" class="l" text-anchor="middle" font-weight="600">Forward</text>
+<text x="826" y="74" class="l" text-anchor="middle" font-weight="600">Deployed</text>
+<rect x="12" y="75.0" width="856" height="26" rx="6" fill="var(--card)"/>
+<text x="24" y="93" class="l">MetaTravelGrid (team): microservices, Kafka, EKS</text>
+<circle cx="732" cy="88" r="6" fill="none" stroke="#eda100" stroke-width="2"/>
+<circle cx="826" cy="88" r="7" fill="#6250d6"/>
+<text x="24" y="119" class="l">Airbnb-style distributed system (Lab 1)</text>
+<circle cx="450" cy="114" r="6" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="826" cy="114" r="7" fill="#6250d6"/>
+<rect x="12" y="127.0" width="856" height="26" rx="6" fill="var(--card)"/>
+<text x="24" y="145" class="l">Persona RAG + QLoRA (team, in progress)</text>
+<circle cx="450" cy="140" r="7" fill="#2a78d6"/>
+<circle cx="544" cy="140" r="7" fill="#eb6834"/>
+<circle cx="638" cy="140" r="6" fill="none" stroke="#1baf7a" stroke-width="2"/>
+<circle cx="826" cy="140" r="6" fill="none" stroke="#6250d6" stroke-width="2"/>
+<text x="24" y="171" class="l">LLM prompting and WixQA RAG</text>
+<circle cx="450" cy="166" r="7" fill="#2a78d6"/>
+<circle cx="638" cy="166" r="6" fill="none" stroke="#1baf7a" stroke-width="2"/>
+<rect x="12" y="179.0" width="856" height="26" rx="6" fill="var(--card)"/>
+<text x="24" y="197" class="l">NLQuery: text-to-SQL (team)</text>
+<circle cx="450" cy="192" r="7" fill="#2a78d6"/>
+<circle cx="732" cy="192" r="6" fill="none" stroke="#eda100" stroke-width="2"/>
+<text x="24" y="223" class="l">Gemma-2B instruction tuning (QLoRA)</text>
+<circle cx="450" cy="218" r="7" fill="#2a78d6"/>
+<circle cx="544" cy="218" r="6" fill="none" stroke="#eb6834" stroke-width="2"/>
+<rect x="12" y="231.0" width="856" height="26" rx="6" fill="var(--card)"/>
+<text x="24" y="249" class="l">MealPilot MCP server</text>
+<circle cx="450" cy="244" r="7" fill="#2a78d6"/>
+<circle cx="826" cy="244" r="6" fill="none" stroke="#6250d6" stroke-width="2"/>
+<text x="24" y="275" class="l">Tweet emotion and language models</text>
+<circle cx="450" cy="270" r="6" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="544" cy="270" r="7" fill="#eb6834"/>
+<circle cx="638" cy="270" r="6" fill="none" stroke="#1baf7a" stroke-width="2"/>
+<rect x="12" y="283.0" width="856" height="26" rx="6" fill="var(--card)"/>
+<text x="24" y="301" class="l">CLIP and BLIP on Flickr30k</text>
+<circle cx="450" cy="296" r="6" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="544" cy="296" r="7" fill="#eb6834"/>
+<text x="24" y="327" class="l">Emotional TTS, super-resolution, ImageNet-20 (NPU)</text>
+<circle cx="544" cy="322" r="7" fill="#eb6834"/>
+<circle cx="826" cy="322" r="6" fill="none" stroke="#6250d6" stroke-width="2"/>
+<rect x="12" y="335.0" width="856" height="26" rx="6" fill="var(--card)"/>
+<text x="24" y="353" class="l">AlexNet, LeNet-5, Naive Bayes</text>
+<circle cx="544" cy="348" r="7" fill="#eb6834"/>
+<circle cx="638" cy="348" r="6" fill="none" stroke="#1baf7a" stroke-width="2"/>
+<text x="24" y="379" class="l">Airline satisfaction, wildfire forecasting</text>
+<circle cx="544" cy="374" r="6" fill="none" stroke="#eb6834" stroke-width="2"/>
+<circle cx="638" cy="374" r="7" fill="#1baf7a"/>
+<rect x="12" y="387.0" width="856" height="26" rx="6" fill="var(--card)"/>
+<text x="24" y="405" class="l">ML fundamentals, statistics, PySpark, Bloom filter</text>
+<circle cx="638" cy="400" r="7" fill="#1baf7a"/>
+<text x="24" y="431" class="l">Power BI and Superstore EDA dashboards</text>
+<circle cx="638" cy="426" r="6" fill="none" stroke="#1baf7a" stroke-width="2"/>
+<circle cx="732" cy="426" r="7" fill="#eda100"/>
+<text x="24" y="460" class="s">Projects with this as the main focus</text>
+<text x="450" y="460" class="l" text-anchor="middle" font-weight="700">5</text>
+<text x="544" y="460" class="l" text-anchor="middle" font-weight="700">5</text>
+<text x="638" y="460" class="l" text-anchor="middle" font-weight="700">2</text>
+<text x="732" y="460" class="l" text-anchor="middle" font-weight="700">1</text>
+<text x="826" y="460" class="l" text-anchor="middle" font-weight="700">2</text></svg>

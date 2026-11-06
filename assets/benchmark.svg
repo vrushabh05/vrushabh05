@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="290" viewBox="0 0 880 290" role="img" aria-label="MetaTravelGrid load test results by optimisation scenario">
+<title>MetaTravelGrid load test results by optimisation scenario</title>
+<style>
+:root{--bg:#fcfcfb;--card:#f3f2ef;--ink:#0b0b0b;--muted:#52514e;--line:#d8d6d0}
+@media (prefers-color-scheme: dark){:root{--bg:#1a1a19;--card:#262624;--ink:#f0efec;--muted:#c3c2b7;--line:#3b3a37}}
+text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;fill:var(--ink)}
+.h{font-size:16px;font-weight:600}.s{font-size:12px;fill:var(--muted)}
+.big{font-size:30px;font-weight:700}.l{font-size:12.5px}.r{font-size:11px;fill:var(--muted)}
+</style>
+<rect width="880" height="290" rx="12" fill="var(--bg)"/>
+<text x="24" y="30" class="h">MetaTravelGrid load test: what each optimisation did</text>
+<text x="24" y="47" class="s">400 concurrent users, 12,000 requests per scenario, 0% errors. Source: the repo's own performance_report.md</text>
+<text x="24" y="78" class="l" font-weight="600">Throughput (requests per second, higher is better)</text>
+<text x="24" y="107" class="l">A  Base</text>
+<rect x="154" y="92" width="282.9" height="22" rx="3" fill="#2a78d6"/>
+<text x="444.9" y="108" class="l" font-weight="600">342.9</text>
+<text x="24" y="145" class="l">B  + Redis cache</text>
+<rect x="154" y="130" width="267.6" height="22" rx="3" fill="#eb6834"/>
+<text x="429.6" y="146" class="l" font-weight="600">324.4</text>
+<text x="24" y="183" class="l">C  + Kafka</text>
+<rect x="154" y="168" width="287.0" height="22" rx="3" fill="#2a78d6"/>
+<text x="449.0" y="184" class="l" font-weight="600">347.9</text>
+<text x="24" y="221" class="l">D  + gzip (full)</text>
+<rect x="154" y="206" width="299.8" height="22" rx="3" fill="#2a78d6"/>
+<text x="461.8" y="222" class="l" font-weight="600">363.4</text>
+<text x="560" y="78" class="l" font-weight="600">P95 latency (ms, lower is better)</text>
+<text x="560" y="107" class="l">A</text>
+<rect x="582" y="92" width="166.8" height="22" rx="3" fill="#1baf7a"/>
+<text x="756.8" y="108" class="l" font-weight="600">2,169</text>
+<text x="560" y="145" class="l">B</text>
+<rect x="582" y="130" width="182.5" height="22" rx="3" fill="#eb6834"/>
+<text x="772.5" y="146" class="l" font-weight="600">2,372</text>
+<text x="560" y="183" class="l">C</text>
+<rect x="582" y="168" width="158.8" height="22" rx="3" fill="#1baf7a"/>
+<text x="748.8" y="184" class="l" font-weight="600">2,064</text>
+<text x="560" y="221" class="l">D</text>
+<rect x="582" y="206" width="135.8" height="22" rx="3" fill="#1baf7a"/>
+<text x="725.8" y="222" class="l" font-weight="600">1,765</text>
+<text x="24" y="258" class="s">Redis alone cost 5.4% throughput on these simple indexed queries; the full stack gained 6.0% in throughput.</text>
+<text x="24" y="276" class="s">The team's report also records 503 errors from the hotel service at 1,000 users.</text></svg>

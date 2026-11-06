@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="292" viewBox="0 0 880 292" role="img" aria-label="Measured results across my repositories">
+<title>Measured results across my repositories</title>
+<style>
+:root{--bg:#fcfcfb;--card:#f3f2ef;--ink:#0b0b0b;--muted:#52514e;--line:#d8d6d0}
+@media (prefers-color-scheme: dark){:root{--bg:#1a1a19;--card:#262624;--ink:#f0efec;--muted:#c3c2b7;--line:#3b3a37}}
+text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;fill:var(--ink)}
+.h{font-size:16px;font-weight:600}.s{font-size:12px;fill:var(--muted)}
+.big{font-size:30px;font-weight:700}.l{font-size:12.5px}.r{font-size:11px;fill:var(--muted)}
+</style>
+<rect width="880" height="292" rx="12" fill="var(--bg)"/>
+<text x="24" y="30" class="h">Measured results across my repositories</text>
+<text x="24" y="47" class="s">Every figure is reproduced in the linked repository README, with its caveats</text>
+<rect x="24" y="58" width="200" height="106" rx="9" fill="var(--card)"/>
+<rect x="24" y="72" width="4" height="78" rx="2" fill="#2a78d6"/>
+<text x="40" y="94" class="big" style="font-size:30px">98.84%</text>
+<text x="40" y="114" class="l">LeNet-5 test accuracy on</text>
+<text x="40" y="129" class="l">MNIST</text>
+<text x="40" y="154" class="r" style="font-size:10px">mnist-lenet5-and-naive-bayes</text>
+<rect x="236" y="58" width="200" height="106" rx="9" fill="var(--card)"/>
+<rect x="236" y="72" width="4" height="78" rx="2" fill="#eb6834"/>
+<text x="252" y="94" class="big" style="font-size:30px">3.71x</text>
+<text x="252" y="114" class="l">HiFi-GAN on the Mobilint</text>
+<text x="252" y="129" class="l">NPU vs CPU (single frame)</text>
+<text x="252" y="154" class="r" style="font-size:10px">emotional-tts-mobilint-npu</text>
+<rect x="448" y="58" width="200" height="106" rx="9" fill="var(--card)"/>
+<rect x="448" y="72" width="4" height="78" rx="2" fill="#eb6834"/>
+<text x="464" y="94" class="big" style="font-size:30px">18.3x</text>
+<text x="464" y="114" class="l">DenoiseSRNet NPU vs CPU</text>
+<text x="464" y="129" class="l">speed-up</text>
+<text x="464" y="154" class="r" style="font-size:10px">super-resolution-npu-labs</text>
+<rect x="660" y="58" width="200" height="106" rx="9" fill="var(--card)"/>
+<rect x="660" y="72" width="4" height="78" rx="2" fill="#1baf7a"/>
+<text x="676" y="94" class="big" style="font-size:30px">81.4%</text>
+<text x="676" y="114" class="l">Fine-tuned DistilBERT,</text>
+<text x="676" y="129" class="l">4-class tweet emotion</text>
+<text x="676" y="144" class="l">(zero-shot 52.4%)</text>
+<text x="676" y="154" class="r" style="font-size:10px">tweet-emotion-transformers</text>
+<rect x="24" y="176" width="200" height="106" rx="9" fill="var(--card)"/>
+<rect x="24" y="190" width="4" height="78" rx="2" fill="#1baf7a"/>
+<text x="40" y="212" class="big" style="font-size:22px">0.89 &gt; 0.97</text>
+<text x="40" y="232" class="l">RAG context recall with</text>
+<text x="40" y="247" class="l">cross-encoder reranking</text>
+<text x="40" y="272" class="r" style="font-size:10px">llm-prompting-and-rag-wixqa</text>
+<rect x="236" y="176" width="200" height="106" rx="9" fill="var(--card)"/>
+<rect x="236" y="190" width="4" height="78" rx="2" fill="#6250d6"/>
+<text x="252" y="212" class="big" style="font-size:22px">0.616 &gt; 0.746</text>
+<text x="252" y="232" class="l">CLIP Recall@1 after partial</text>
+<text x="252" y="247" class="l">fine-tuning (Flickr30k)</text>
+<text x="252" y="272" class="r" style="font-size:10px">clip-blip-multimodal-flickr30k</text>
+<rect x="448" y="176" width="200" height="106" rx="9" fill="var(--card)"/>
+<rect x="448" y="190" width="4" height="78" rx="2" fill="#1baf7a"/>
+<text x="464" y="212" class="big" style="font-size:22px">402 vs 5,046</text>
+<text x="464" y="232" class="l">Test perplexity: neural vs</text>
+<text x="464" y="247" class="l">count trigram LM</text>
+<text x="464" y="272" class="r" style="font-size:10px">tweet-emotion-transformers</text>
+<rect x="660" y="176" width="200" height="106" rx="9" fill="var(--card)"/>
+<rect x="660" y="190" width="4" height="78" rx="2" fill="#eda100"/>
+<text x="676" y="212" class="big" style="font-size:22px">0.141 vs 0.138</text>
+<text x="676" y="232" class="l">Bloom filter false-positive</text>
+<text x="676" y="247" class="l">rate, measured vs theory</text>
+<text x="676" y="272" class="r" style="font-size:10px">bloom-filter-hash-quality</text></svg>
