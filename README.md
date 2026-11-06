@@ -1,312 +1,172 @@
 <div align="center">
 
-# Hi, I'm Vrushabh Bodarya.....
+# Vrushabh Bodarya
 
-### Data Science × Machine Learning × Generative AI
+### AI Engineering · ML Engineering · Data Science · Data Analytics · Forward Deployed Engineering
 
-I build systems that connect data, models, and modern AI.
+I build systems that connect data, models and real deployments, from Power BI dashboards to an LLM tool server to a speech model running on an NPU.
 
-Currently pursuing an **M.S. in Applied Data Intelligence** at  
-**San José State University**.
+M.S. in Applied Data Intelligence, **San José State University**
 
-<br />
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-Explore_My_Work-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](#featured-projects)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vrushabh-bodarya-a36548297/)
 [![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vrushabhbodaryaait@gmail.com)
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
 
 </div>
 
 ---
 
-## About Me
+## Where I fit
 
-I’m a data and AI builder interested in turning complex information into useful, measurable systems.
+```mermaid
+mindmap
+  root((Vrushabh))
+    AI Engineering
+      MCP tool servers
+      LLM agents and RAG
+      Tool calling with typed schemas
+    ML Engineering
+      Training and evaluation
+      ONNX export and NPU compilation
+      Streamlit model serving
+    Data Science
+      Cleaning and EDA
+      Classification
+      Time series and forecasting
+    Data Analytics
+      Power BI and DAX
+      SQL and Python
+      Dashboards and storytelling
+    Forward Deployed
+      Full-stack systems
+      Kafka, Docker, Kubernetes
+      API integration and load testing
+```
 
-My work and current exploration span:
-
-- Data analysis and statistical modeling
-- Machine learning and forecasting
-- Generative AI and retrieval-augmented generation
-- AI agents and tool-using systems
-- LLM evaluation and context engineering
-- Sports and wearable analytics
-- Data visualization and intelligent products
-
-I approach AI as an engineering discipline:
-
-> Understand the problem, build a baseline, evaluate the system, study its failure modes, and iterate.
+| Role | What I can show | Proof |
+|---|---|---|
+| **AI Engineering** | An MCP server exposing typed tools to LLM agents; an LLM travel-planning agent service inside a microservice system | [mealpilot-mcp](https://github.com/vrushabh05/mealpilot-mcp), [Lab1_distributed_system](https://github.com/vrushabh05/Lab1_distributed_system) |
+| **ML Engineering** | A trained, evaluated and served classifier; a HiFi-GAN vocoder compiled for the Mobilint NPU, 3.71x faster than CPU in a single-frame benchmark | [Breast cancer risk app](https://github.com/vrushabh05/-Interactive-Breast-Cancer-Risk-Assessment-Using-Machine-Learning-and-Streamlit), emotional TTS on the NPU (course project, repository to be published) |
+| **Data Science** | Cleaning, EDA, classification with reproducible cross-validation, astronomy image and tabular analysis, Google Trends analysis | [Data cleaning](https://github.com/vrushabh05/Data-Cleaning-and-Preprocessing-Project), [Galactic insights](https://github.com/vrushabh05/Galactic-Insights-Comprehensive-Techniques-in-Astronomical-Data-Image-Processing-and-Normalization), [Google search trends](https://github.com/vrushabh05/Google-Search-Analysis-) |
+| **Data Analytics** | Multi-page Power BI reports with forecasting, decomposition and comparison views, plus Python EDA | [Global sales](https://github.com/vrushabh05/Global_Sales_Insights-and-Future-Forecasting-with-PowerBI), [Superstore dashboard](https://github.com/vrushabh05/PowerBI_Walmart_Sales-_Dashboard), [Spotify dashboard](https://github.com/vrushabh05/Spotify-Dashboard), [Superstore EDA](https://github.com/vrushabh05/Exploratory_Data_Analysis_on_Walmart_sales_data) |
+| **Forward Deployed Engineering** | End-to-end delivery: React and Node front end, microservices on Kafka, Docker and Kubernetes manifests, JMeter load tests, an LLM agent service | [Lab1_distributed_system](https://github.com/vrushabh05/Lab1_distributed_system) |
 
 ---
 
-## Current Focus
+## Featured work
 
-- Building evaluation-first RAG systems
-- Exploring agentic AI and Model Context Protocol
-- Designing tool-using AI workflows
-- Studying LLM evaluation and context engineering
-- Experimenting with multimodal AI
-- Applying machine learning to sports and time-series data
-- Building analytical interfaces around complex datasets
+### Emotional TTS on the Mobilint NPU
+Emotion-conditioned speech synthesis (Tacotron 2 + HiFi-GAN). The HiFi-GAN generator was compiled to an NPU executable with Mobilint's toolchain and benchmarked against CPU: **real-time factor 0.0354 on the NPU vs 0.1312 on CPU (3.71x)** on a single-frame benchmark. Group course project, presented to the Mobilint team.
+
+```mermaid
+flowchart LR
+    A[Text + emotion] --> B[Tacotron 2<br/>CPU / GPU] --> C[HiFi-GAN generator]
+    C -.PyTorch to ONNX to MXQ.-> D[Mobilint NPU]
+    D --> E[Speech]
+```
+
+### MealPilot MCP
+A Model Context Protocol server with four typed tools (search by name, filter by ingredient, meal details, random meal), Pydantic schemas, result caps and request timeouts. [Repository](https://github.com/vrushabh05/mealpilot-mcp)
+
+### Airbnb distributed system
+React + Redux front end, Node.js microservices over Kafka and MongoDB, a FastAPI LangChain agent, Docker and Kubernetes, with JMeter performance tests. [Repository](https://github.com/vrushabh05/Lab1_distributed_system)
+
+### Breast cancer risk assessment
+Logistic-regression classifier with a Streamlit interface and radar chart. Reproducible 5-fold cross-validation: **97.4% mean accuracy, 94.4% malignant recall** (educational project, not a medical device). [Repository](https://github.com/vrushabh05/-Interactive-Breast-Cancer-Risk-Assessment-Using-Machine-Learning-and-Streamlit)
+
+### Power BI analytics
+Global sales with forecasting and decomposition, a Superstore sales dashboard and a Spotify listening dashboard. See the repositories in the table above.
+
+<details>
+<summary><b>In development and concepts</b></summary>
+
+- **TactiGraph AI** (in development): graph-based football tactical analysis with an LLM question layer. `Python` `NetworkX` `PyTorch Geometric` `Plotly`
+- **Nexus MCP** (in development): multi-tool research agent on the Model Context Protocol, with memory, traces and human approval. `Python` `MCP` `FastAPI` `Pydantic`
+- **ContextForge** (prototype): evaluation-first RAG with hybrid retrieval and reranking. `LangChain` `FAISS` `FastAPI`
+- **PulseOS** (prototype): wearable-data analytics, forecasting and anomaly detection. Not medical advice.
+- **QueryPilot** (prototype): natural language to guarded, read-only SQL analytics.
+- **AutoDS Council** (concept): multi-agent data-science workflow with deterministic validation.
+
+</details>
 
 ---
 
 ## Experience
 
-### Data Science Intern / Co-op  
-**AppStoneLab LLP** · January 2024 – December 2024
+**Data Science Intern / Co-op**, AppStoneLab LLP · Jan 2024 to Dec 2024
+Data cleaning and EDA, feature engineering, models with Scikit-learn and XGBoost, cross-validation and tuning, NLP, embeddings, LLMs, LangChain and RAG, Tableau dashboards.
 
-Worked with structured and unstructured data across the data-science lifecycle:
-
-- Data cleaning and exploratory data analysis
-- Feature engineering and statistical analysis
-- Machine-learning development with Scikit-learn and XGBoost
-- Cross-validation and hyperparameter tuning
-- NLP, embeddings, LLMs, LangChain, and RAG
-- Data visualization with Tableau
-- Technical and business communication
-
-### Data Analyst Intern  
-**InfoLabz** · July 2023 – August 2023
-
-Analyzed more than **500K network records** using Python, SQL, statistics, and machine learning.
-
-- Investigated network-usage patterns
-- Worked with semi-structured network logs
-- Built automated data-processing workflows
-- Applied classification and clustering
-- Explored congestion forecasting
-- Performed feature engineering and model validation
-- Communicated findings through data visualization
+**Data Analyst Intern**, InfoLabz · Jul 2023 to Aug 2023
+Analyzed more than 500K network records with Python, SQL, statistics and machine learning: usage patterns, classification and clustering, congestion forecasting, validation and visualization.
 
 ---
 
-## Featured Projects
+## Skills
 
-### TactiGraph AI  
-**Status: In Development**
+| Area | Tools |
+|---|---|
+| Data and analytics | Python, SQL, pandas, NumPy, EDA, statistics, time series, Tableau, Power BI, DAX, Matplotlib, Seaborn, Plotly |
+| Machine learning | scikit-learn, XGBoost, classification, regression, clustering, forecasting, cross-validation, model evaluation |
+| Deep learning and edge | PyTorch, TensorFlow, ONNX, Mobilint NPU toolchain (compile, run, benchmark) |
+| Generative AI | LLMs, RAG, embeddings, vector search, LangChain, MCP, prompt and context engineering |
+| Engineering | FastAPI, Node.js, React, Kafka, MongoDB, Docker, Kubernetes, AWS, CI/CD |
 
-A graph-powered football tactical-intelligence engine.
+> Tools listed under learning or experimentation in the concepts above are not claimed as production experience.
 
-The system models players and passes as dynamic graphs to explore passing networks, possession structures, player influence, pressure zones, passing lanes, and formation transitions.
+### Language mix, refreshed daily
 
-An LLM layer retrieves structured match information and helps answer analytical questions without presenting its interpretation as guaranteed causal truth.
+<div align="center">
 
-**Stack:** `Python` `NetworkX` `Pandas` `PyTorch Geometric` `Plotly` `SQL`
+<img src="assets/languages.svg" alt="Language mix across my public repositories" width="640" />
 
----
+</div>
 
-### Nexus MCP  
-**Status: In Development**
+> Measured in bytes of code, which reflects project mix and not skill. Notebooks are excluded.
 
-A multi-tool AI research agent built around the Model Context Protocol.
+### GitHub activity
 
-The system explores:
+<div align="center">
 
-- Tool discovery and selection
-- Structured outputs
-- Context management
-- Error recovery
-- Agent memory
-- Execution traces
-- Human approval workflows
+<img src="https://github-readme-stats.vercel.app/api?username=vrushabh05&show_icons=true&hide_border=true&theme=transparent&title_color=2563EB&icon_color=06B6D4&text_color=64748B" alt="GitHub statistics" height="165" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vrushabh05&layout=compact&hide_border=true&theme=transparent&title_color=2563EB&text_color=64748B" alt="Top languages" height="165" />
 
-**Architecture:**  
-`User → LLM → Planner → MCP Router → Tools → Observations → Memory → Response`
-
-**Stack:** `Python` `MCP` `OpenAI` `Claude` `FastAPI` `Pydantic`
-
----
-
-### ContextForge  
-**Status: Prototype**
-
-An evaluation-first retrieval-augmented generation system for complex document intelligence.
-
-The pipeline covers:
-
-`Documents → Parser → Chunks → Embeddings → Vector Index → Hybrid Retrieval → Reranker → LLM → Grounded Response`
-
-Evaluation focuses on:
-
-- Recall@K
-- Mean Reciprocal Rank
-- Context precision and recall
-- Answer faithfulness
-- Retrieval latency
-
-**Stack:** `Python` `LangChain` `FAISS` `Embeddings` `FastAPI` `LLMs`
-
----
-
-### PulseOS  
-**Status: Prototype**
-
-A personal analytics system for exploring Fitbit-style wearable data.
-
-The project investigates:
-
-- Activity and sleep trends
-- Behavioral clustering
-- Time-series forecasting
-- Anomaly detection
-- Personalized trend summaries
-- Relationships between activity and sleep patterns
-- RAG-based questions over processed analytics
-
-PulseOS is designed for behavioral exploration—not medical diagnosis or healthcare advice.
-
-**Stack:** `Python` `Pandas` `Scikit-learn` `Time-Series Analysis` `Plotly` `RAG`
-
----
-
-### QueryPilot  
-**Status: Prototype**
-
-An AI analytics copilot that converts natural-language questions into guarded analytical workflows.
-
-**Workflow:**  
-`Question → Schema Context → SQL Generation → Validation → Query → Analysis → Chart → Explanation`
-
-Safety controls include:
-
-- Read-only SQL
-- Schema restrictions
-- Query validation
-- Cost and row limits
-- Result verification
-
-**Stack:** `LLM` `Python` `SQL` `FastAPI` `React` `Plotly`
-
----
-
-### AutoDS Council  
-**Status: Concept**
-
-A multi-agent data-science workflow where specialized agents collaborate across:
-
-- Data profiling
-- Cleaning
-- Hypothesis generation
-- Modeling
-- Evaluation
-- Critique
-- Visualization
-- Reporting
-
-The project explores agent collaboration while keeping model validation and statistical checks deterministic.
-
-**Stack:** `Python` `LLMs` `Pandas` `Scikit-learn` `Structured Outputs`
-
----
-
-## Technical Toolkit
-
-### Data and Analytics
-
-`Python` `SQL` `Pandas` `NumPy` `EDA` `Data Cleaning`  
-`Feature Engineering` `Statistical Analysis` `Time-Series Analysis`  
-`Tableau` `Power BI` `Matplotlib` `Seaborn` `Plotly`
-
-### Machine Learning
-
-`Scikit-learn` `XGBoost` `Classification` `Regression`  
-`Clustering` `Forecasting` `Recommendation Systems`  
-`Cross-Validation` `Hyperparameter Optimization` `Model Evaluation`
-
-### Generative AI
-
-`LLMs` `RAG` `Embeddings` `Vector Search` `Prompt Engineering`  
-`Semantic Search` `Structured Outputs` `Context Engineering`  
-`LangChain` `LlamaIndex` `Hugging Face`
-
-### Currently Exploring and Building With
-
-`AI Agents` `Multi-Agent Systems` `MCP` `Tool-Using Agents`  
-`Agent Memory` `Planning` `Orchestration` `LLM Evaluation`  
-`PyTorch` `TensorFlow` `Transformers` `Spark` `Databricks`  
-`AWS` `Docker` `FastAPI` `CI/CD` `Model Monitoring`
-
-> Technologies in this section represent active learning and experimentation, not necessarily professional production experience.
+</div>
 
 ---
 
 ## Education
 
-### Master of Science in Applied Data Intelligence
+**M.S. in Applied Data Intelligence**, San José State University · Jan 2025 to Dec 2026 · GPA 3.66 / 4.0
+Machine Learning on Big Data, Deep Learning, Generative AI, Data Analysis Cycle, Algorithms and Data Structures, Statistics and Forecasting, Cloud Computing, Database Management Systems.
 
-**San José State University**  
-San Jose, California · January 2025 – December 2026  
-**GPA: 3.66 / 4.0**
-
-Relevant areas of study:
-
-- Machine Learning on Big Data
-- Deep Learning
-- Generative AI
-- Data Analysis Cycle
-- Algorithms and Data Structures
-- Statistics and Forecasting
-- Cloud Computing
-- Database Management Systems
-
-### Bachelor of Engineering in Information Technology
-
-**Gujarat Technological University**  
-Gujarat, India · July 2020 – May 2024  
-**GPA: 9.23 / 10**
+**B.E. in Information Technology**, Gujarat Technological University · Jul 2020 to May 2024 · GPA 9.23 / 10
 
 ---
 
-## How I Build AI Systems
+## How I build
 
-### Machine-Learning Workflow
+```mermaid
+flowchart LR
+    A[Problem] --> B[Data] --> C[Baseline] --> D[Model] --> E[Evaluate] --> F[Deploy] --> G[Observe] --> H[Iterate]
+    H --> C
+```
 
-`Problem → Data → Baseline → Model → Evaluate → System → Ship → Observe → Iterate`
-
-### Generative-AI Workflow
-
-`Question → Context → Retrieval → Reasoning → Tools → Validation → Response → Evaluation`
-
-I care about building systems that are not only capable, but also measurable, explainable, and grounded in evidence.
+I care about systems that are measurable, reproducible and honest about their limits, so each repository states what was measured and how.
 
 ---
-
-## GitHub Activity
 
 <div align="center">
 
-<img
-  src="https://github-readme-stats.vercel.app/api?username=vrushabh05&show_icons=true&hide_border=true&theme=transparent&title_color=2563EB&icon_color=06B6D4&text_color=64748B"
-  alt="Vrushabh Bodarya's GitHub statistics"
-  height="165"
-/>
+**Open to roles in** AI Engineering · ML Engineering · Data Science · Data Analytics · Forward Deployed Engineering
 
-<img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=vrushabh05&layout=compact&hide_border=true&theme=transparent&title_color=2563EB&text_color=64748B"
-  alt="Languages used across Vrushabh's public repositories"
-  height="165"
-/>
-
-</div>
-
-> These charts are generated from public GitHub repositories and do not represent overall skill or proficiency.
-
----
-
-## Let’s Connect
-
-I’m interested in opportunities across **Data Science, Machine Learning, AI Engineering, Generative AI, Analytics, and intelligent data products**.
-
-- **Email:** [vrushabhbodaryaait@gmail.com](mailto:vrushabhbodaryaait@gmail.com)
-- **LinkedIn:** [Vrushabh Bodarya](https://www.linkedin.com/in/vrushabh-bodarya-a36548297/)
-- **GitHub:** [@vrushabh05](https://github.com/vrushabh05)
-- **Phone:** [(669) 295-9450](tel:+16692959450)
-
-<div align="center">
-
-### Data × Models × Intelligence
-
-Building systems that turn messy data into useful intelligence.
+[LinkedIn](https://www.linkedin.com/in/vrushabh-bodarya-a36548297/) · [Email](mailto:vrushabhbodaryaait@gmail.com) · [GitHub](https://github.com/vrushabh05)
 
 </div>
