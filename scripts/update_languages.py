@@ -1,7 +1,11 @@
 """Builds assets/languages.svg: language mix across my public, non-fork repositories.
 
 Runs daily in GitHub Actions (see .github/workflows/update-stats.yml).
-Notebook bytes are excluded because embedded images make them dwarf real code.
+
+Most of my Python lives in Jupyter notebooks, which GitHub reports as a separate
+"Jupyter Notebook" language whose bytes are mostly embedded images and outputs. Those
+bytes are dropped, and instead the source of every Python code cell is counted as
+Python, so the chart reflects code I wrote rather than notebook output.
 
 Local use:  python scripts/update_languages.py --repos owner/a owner/b
 """
@@ -35,6 +39,47 @@ def api(path):
     return json.loads(out.stdout)
 
 
+def api_raw(path):
+    """Fetch a raw blob. Uses the token if present, otherwise the gh CLI."""
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        req = urllib.request.Request(
+            f"https://api.github.com/{path}",
+            headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github.raw"},
+        )
+        with urllib.request.urlopen(req, timeout=120) as r:
+            return r.read()
+    out = subprocess.run(["gh", "api", "-H", "Accept: application/vnd.github.raw", path], capture_output=True, check=True)
+    return out.stdout
+
+
+MAX_NOTEBOOK = 30_000_000  # bytes; skip anything larger than this
+
+
+def notebook_python_bytes(repo):
+    """Bytes of Python source in the code cells of every notebook in a repo."""
+    tree = api(f"repos/{repo}/git/trees/HEAD?recursive=1").get("tree", [])
+    total = 0
+    for node in tree:
+        if node["type"] != "blob" or not node["path"].endswith(".ipynb") or node.get("size", 0) > MAX_NOTEBOOK:
+            continue
+        try:
+            nb = json.loads(api_raw(f"repos/{repo}/git/blobs/{node['sha']}"))
+        except (ValueError, OSError, subprocess.CalledProcessError):
+            continue
+        meta = nb.get("metadata", {})
+        lang = (meta.get("language_info", {}).get("name") or meta.get("kernelspec", {}).get("language") or "python").lower()
+        if lang != "python":
+            continue
+        for cell in nb.get("cells", []):
+            if cell.get("cell_type") != "code":
+                continue
+            src = cell.get("source", "")
+            src = "".join(src) if isinstance(src, list) else src
+            total += sum(len(ln) + 1 for ln in src.splitlines() if not ln.lstrip().startswith(("%", "!")))
+    return total
+
+
 def list_repos():
     repos, page = [], 1
     while True:
@@ -52,9 +97,12 @@ def main():
     repos = [r for r in (args.repos or list_repos()) if r.lower() != SKIP_REPO.lower()]
     totals = {}
     for repo in repos:
-        for lang, n in api(f"repos/{repo}/languages").items():
+        langs = api(f"repos/{repo}/languages")
+        for lang, n in langs.items():
             if lang not in SKIP_LANG:
                 totals[lang] = totals.get(lang, 0) + n
+        if "Jupyter Notebook" in langs:
+            totals["Python"] = totals.get("Python", 0) + notebook_python_bytes(repo)
     ranked = sorted(totals.items(), key=lambda kv: -kv[1])
     top, rest = ranked[:6], ranked[6:]
     if rest:
@@ -75,7 +123,7 @@ def main():
         legend.append(f'<circle cx="{cx + 6}" cy="{cy - 4}" r="5" fill="{color}"/>'
                       f'<text x="{cx + 18}" y="{cy}" class="t">{lang}</text>'
                       f'<text x="{cx + 270}" y="{cy}" class="t m" text-anchor="end">{100 * n / total:.1f}%</text>')
-    height = 104 + ((len(top) + 1) // 2) * 24 + 12
+    height = 104 + ((len(top) + 1) // 2) * 24 + 26
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{height}" viewBox="0 0 {W} {height}" role="img" aria-label="Language mix across public repositories">
 <style>
 :root{{--bg:#fcfcfb;--ink:#0b0b0b;--muted:#52514e}}
@@ -87,6 +135,7 @@ def main():
 <text x="{X0}" y="30" class="h">Language mix across my public repositories</text>
 {''.join(rows)}
 {''.join(legend)}
+<text x="{X0}" y="{height - 8}" class="t m" style="font-size:11px">Python includes the code cells of my Jupyter notebooks. Forks excluded.</text>
 </svg>
 '''
     out = ROOT / "assets" / "languages.svg"

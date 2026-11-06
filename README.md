@@ -295,14 +295,13 @@ Analyzed more than 500K network records with Python, SQL, statistics and machine
 
 </div>
 
-> Measured in bytes of code, which reflects project mix and not skill. Notebooks are excluded.
+> Measured in bytes of code, which reflects project mix and not skill. Most of my Python is written in Jupyter notebooks, so the chart counts the source of every Python code cell as Python and ignores notebook outputs and images. Forks are excluded.
 
 ### GitHub activity
 
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=vrushabh05&show_icons=true&hide_border=true&theme=transparent&title_color=2563EB&icon_color=06B6D4&text_color=64748B" alt="GitHub statistics" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vrushabh05&layout=compact&hide_border=true&theme=transparent&title_color=2563EB&text_color=64748B" alt="Top languages" height="165" />
 
 </div>
 
