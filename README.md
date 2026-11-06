@@ -53,9 +53,9 @@ mindmap
 
 | Role | What I can show | Proof |
 |---|---|---|
-| **AI Engineering** | An MCP server exposing typed tools to LLM agents; an LLM travel-planning agent service inside a microservice system | [mealpilot-mcp](https://github.com/vrushabh05/mealpilot-mcp), [Lab1_distributed_system](https://github.com/vrushabh05/Lab1_distributed_system) |
-| **ML Engineering** | A trained, evaluated and served classifier; a HiFi-GAN vocoder compiled for the Mobilint NPU, 3.71x faster than CPU in a single-frame benchmark | [Breast cancer risk app](https://github.com/vrushabh05/-Interactive-Breast-Cancer-Risk-Assessment-Using-Machine-Learning-and-Streamlit), [Emotional TTS on the NPU](https://github.com/vrushabh05/emotional-tts-mobilint-npu), [super-resolution labs on the NPU](https://github.com/vrushabh05/super-resolution-npu-deep-learning-labs) |
-| **Data Science** | Cleaning, EDA, classification with reproducible cross-validation, astronomy image and tabular analysis, Google Trends analysis | [Data cleaning](https://github.com/vrushabh05/Data-Cleaning-and-Preprocessing-Project), [Galactic insights](https://github.com/vrushabh05/Galactic-Insights-Comprehensive-Techniques-in-Astronomical-Data-Image-Processing-and-Normalization), [Google search trends](https://github.com/vrushabh05/Google-Search-Analysis-) |
+| **AI Engineering** | An MCP server exposing typed tools to LLM agents; an LLM travel-planning agent service inside a microservice system; natural-language-to-SQL with fine-tuned LLMs, scored by execution accuracy | [mealpilot-mcp](https://github.com/vrushabh05/mealpilot-mcp), [Lab1_distributed_system](https://github.com/vrushabh05/Lab1_distributed_system), [nlquery-genai](https://github.com/vrushabh05/nlquery-genai) |
+| **ML Engineering** | A trained, evaluated and served classifier; a HiFi-GAN vocoder compiled for the Mobilint NPU, 3.71x faster than CPU in a single-frame benchmark | [Breast cancer risk app](https://github.com/vrushabh05/-Interactive-Breast-Cancer-Risk-Assessment-Using-Machine-Learning-and-Streamlit), [Emotional TTS on the NPU](https://github.com/vrushabh05/emotional-tts-mobilint-npu), [super-resolution labs on the NPU](https://github.com/vrushabh05/super-resolution-npu-deep-learning-labs), [ImageNet-20 CNN](https://github.com/vrushabh05/deep-learning-lab1-imagenet20-cnn) |
+| **Data Science** | Cleaning, EDA, classification with reproducible cross-validation, XGBoost with Optuna, LSTM and CNN-LSTM time-series forecasting, astronomy image and tabular analysis, Google Trends analysis | [Airline satisfaction](https://github.com/vrushabh05/airline-satisfaction-classification), [Wildfire dynamics](https://github.com/vrushabh05/wildfire-dynamics-prediction), [Data cleaning](https://github.com/vrushabh05/Data-Cleaning-and-Preprocessing-Project), [Galactic insights](https://github.com/vrushabh05/Galactic-Insights-Comprehensive-Techniques-in-Astronomical-Data-Image-Processing-and-Normalization), [Google search trends](https://github.com/vrushabh05/Google-Search-Analysis-) |
 | **Data Analytics** | Multi-page Power BI reports with forecasting, decomposition and comparison views, plus Python EDA | [Global sales](https://github.com/vrushabh05/Global_Sales_Insights-and-Future-Forecasting-with-PowerBI), [Superstore dashboard](https://github.com/vrushabh05/PowerBI_Walmart_Sales-_Dashboard), [Spotify dashboard](https://github.com/vrushabh05/Spotify-Dashboard), [Superstore EDA](https://github.com/vrushabh05/Exploratory_Data_Analysis_on_Walmart_sales_data) |
 | **Forward Deployed Engineering** | End-to-end delivery: React and Node front end, microservices on Kafka, Docker and Kubernetes manifests, JMeter load tests, an LLM agent service | [Lab1_distributed_system](https://github.com/vrushabh05/Lab1_distributed_system) |
 
@@ -75,6 +75,15 @@ flowchart LR
 
 ### Super-resolution models on the NPU
 Two deep-learning labs where a PyTorch model is exported to ONNX, quantized and compiled for the Mobilint NPU: **LiteSRNet (581K parameters) runs 4.2x faster than CPU at 24.283 dB**, just under its 24.3 dB course target, and **DenoiseSRNet runs 18.3x faster at 22.400 dB**. [Repository](https://github.com/vrushabh05/super-resolution-npu-deep-learning-labs)
+
+### NLQuery: natural language to SQL
+Group project comparing LLMs on text-to-SQL by execution accuracy, SQL validity and latency, including a LoRA fine-tune. [Repository](https://github.com/vrushabh05/nlquery-genai)
+
+### Airline satisfaction and wildfire forecasting
+Two data-science projects with honest caveats written in the READMEs: random forest and XGBoost reach about 96% accuracy on airline passenger satisfaction (Optuna tuned on the test split, so that number is flagged as optimistic), and LSTM and CNN-LSTM models forecast wildfire detections from MODIS data. [Airline repository](https://github.com/vrushabh05/airline-satisfaction-classification), [wildfire repository](https://github.com/vrushabh05/wildfire-dynamics-prediction)
+
+### ImageNet-20 CNN
+A 1.2M-parameter CNN trained from scratch on a 20-class ImageNet subset (best validation accuracy 67.3%) and exported to ONNX for the NPU toolchain. [Repository](https://github.com/vrushabh05/deep-learning-lab1-imagenet20-cnn)
 
 ### MealPilot MCP
 A Model Context Protocol server with four typed tools (search by name, filter by ingredient, meal details, random meal), Pydantic schemas, result caps and request timeouts. [Repository](https://github.com/vrushabh05/mealpilot-mcp)
