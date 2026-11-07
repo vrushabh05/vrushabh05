@@ -13,12 +13,21 @@ M.S. in Applied Data Intelligence, **San José State University**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)
+![OpenAI](https://img.shields.io/badge/OpenAI%20API-412991?logo=openai&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?logo=apachekafka&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white)
 
 **Jump to:** [Results](#results-at-a-glance) · [Explore by role](#explore-by-role) · [Team projects](#team-projects) · [More projects](#more-projects) · [Experience](#experience) · [Skills](#skills) · [Education](#education)
 
@@ -277,15 +286,95 @@ Analyzed more than 500K network records with Python, SQL, statistics and machine
 
 ## Skills
 
-| Area | Tools |
-|---|---|
-| Data and analytics | Python, SQL, pandas, NumPy, EDA, statistics, time series, Tableau, Power BI, DAX, Matplotlib, Seaborn, Plotly |
-| Machine learning | scikit-learn, XGBoost, classification, regression, clustering, forecasting, cross-validation, model evaluation |
-| Deep learning and edge | PyTorch, TensorFlow, ONNX, Mobilint NPU toolchain (compile, run, benchmark) |
-| Generative AI | LLMs, RAG, embeddings, vector search, LangChain, MCP, prompt and context engineering |
-| Engineering | FastAPI, Node.js, React, Kafka, MongoDB, Docker, Kubernetes, AWS, CI/CD |
+The chart counts how many of my repositories actually use each tool, scanned from code and notebook cells. Open a field below for the full list, split into what I built hands-on and what I used inside team projects.
 
-> Tools listed under learning or experimentation in the concepts above are not claimed as production experience.
+<div align="center">
+
+<img src="assets/skills.svg" alt="Skills counted from my repositories, grouped by target field" width="880" />
+
+</div>
+
+> The counts come from my public repositories only. My internship work at AppStoneLab and InfoLabz is private and not counted: it covered scikit-learn, XGBoost, NLP, embeddings, LLMs, LangChain and RAG, Tableau dashboards, Python and SQL on more than 500K records.
+
+### Explore by field
+
+<details open>
+<summary><b>AI Engineering</b>: LLMs, retrieval and evaluation</summary>
+
+**Hands-on in my own projects**
+
+![OpenAI API](https://img.shields.io/badge/OpenAI%20API-2a78d6?style=flat-square&logo=openai&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-2a78d6?style=flat-square&logo=huggingface&logoColor=white) ![PEFT, LoRA, QLoRA](https://img.shields.io/badge/PEFT%2C%20LoRA%2C%20QLoRA-2a78d6?style=flat-square) ![RAG](https://img.shields.io/badge/RAG-2a78d6?style=flat-square) ![FAISS](https://img.shields.io/badge/FAISS-2a78d6?style=flat-square) ![sentence-transformers](https://img.shields.io/badge/sentence--transformers-2a78d6?style=flat-square) ![Cross-encoder reranking](https://img.shields.io/badge/Cross--encoder%20reranking-2a78d6?style=flat-square) ![LangChain](https://img.shields.io/badge/LangChain-2a78d6?style=flat-square&logo=langchain&logoColor=white) ![MCP (Model Context Protocol)](https://img.shields.io/badge/MCP%20%28Model%20Context%20Protocol%29-2a78d6?style=flat-square) ![Pydantic](https://img.shields.io/badge/Pydantic-2a78d6?style=flat-square&logo=pydantic&logoColor=white) ![Prompt engineering](https://img.shields.io/badge/Prompt%20engineering-2a78d6?style=flat-square) ![LLM-as-judge evaluation](https://img.shields.io/badge/LLM--as--judge%20evaluation-2a78d6?style=flat-square) ![Text-to-SQL](https://img.shields.io/badge/Text--to--SQL-2a78d6?style=flat-square)
+
+**Used on team projects** (built with teammates; I contributed to parts of the stack)
+
+![Ollama](https://img.shields.io/badge/Ollama-8a8984?style=flat-square) ![ChromaDB](https://img.shields.io/badge/ChromaDB-8a8984?style=flat-square) ![Unsloth](https://img.shields.io/badge/Unsloth-8a8984?style=flat-square) ![LightRAG experiments](https://img.shields.io/badge/LightRAG%20experiments-8a8984?style=flat-square) ![Gemini API](https://img.shields.io/badge/Gemini%20API-8a8984?style=flat-square&logo=googlegemini&logoColor=white)
+
+**Where to see it:** [LLM prompting and WixQA RAG](https://github.com/vrushabh05/llm-prompting-and-enterprise-rag-wixqa) · [Gemma PEFT](https://github.com/vrushabh05/gemma-instruction-tuning-peft) · [NLQuery](https://github.com/vrushabh05/nlquery-genai) · [MealPilot MCP](https://github.com/vrushabh05/mealpilot-mcp) · [Persona RAG](#persona-rag-qlora-persona-generation-in-progress)
+
+</details>
+
+<details>
+<summary><b>ML Engineering</b>: Training, evaluation and edge deployment</summary>
+
+**Hands-on in my own projects**
+
+![PyTorch](https://img.shields.io/badge/PyTorch-eb6834?style=flat-square&logo=pytorch&logoColor=white) ![TensorFlow and Keras](https://img.shields.io/badge/TensorFlow%20and%20Keras-eb6834?style=flat-square&logo=tensorflow&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-eb6834?style=flat-square&logo=scikitlearn&logoColor=white) ![XGBoost](https://img.shields.io/badge/XGBoost-eb6834?style=flat-square) ![Optuna](https://img.shields.io/badge/Optuna-eb6834?style=flat-square) ![ONNX](https://img.shields.io/badge/ONNX-eb6834?style=flat-square&logo=onnx&logoColor=white) ![Mobilint NPU (compile, quantize, benchmark)](https://img.shields.io/badge/Mobilint%20NPU%20%28compile%2C%20quantize%2C%20benchmark%29-eb6834?style=flat-square) ![CNNs](https://img.shields.io/badge/CNNs-eb6834?style=flat-square) ![CLIP and BLIP](https://img.shields.io/badge/CLIP%20and%20BLIP-eb6834?style=flat-square) ![Transfer learning](https://img.shields.io/badge/Transfer%20learning-eb6834?style=flat-square) ![Streamlit](https://img.shields.io/badge/Streamlit-eb6834?style=flat-square&logo=streamlit&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-eb6834?style=flat-square&logo=fastapi&logoColor=white)
+
+**Used on team projects** (built with teammates; I contributed to parts of the stack)
+
+![Airflow](https://img.shields.io/badge/Airflow-8a8984?style=flat-square&logo=apacheairflow&logoColor=white) ![Spark pipelines](https://img.shields.io/badge/Spark%20pipelines-8a8984?style=flat-square&logo=apachespark&logoColor=white) ![pytest](https://img.shields.io/badge/pytest-8a8984?style=flat-square&logo=pytest&logoColor=white) ![MinIO](https://img.shields.io/badge/MinIO-8a8984?style=flat-square)
+
+**Where to see it:** [Emotional TTS on NPU](https://github.com/vrushabh05/emotional-tts-mobilint-npu) · [Super-resolution on NPU](https://github.com/vrushabh05/super-resolution-npu-deep-learning-labs) · [CLIP and BLIP](https://github.com/vrushabh05/clip-blip-multimodal-flickr30k) · [AlexNet](https://github.com/vrushabh05/alexnet-imagenet20-from-scratch) · [LeNet-5](https://github.com/vrushabh05/mnist-lenet5-and-naive-bayes)
+
+</details>
+
+<details>
+<summary><b>Data Science</b>: Statistics, modelling and forecasting</summary>
+
+**Hands-on in my own projects**
+
+![Python](https://img.shields.io/badge/Python-1baf7a?style=flat-square&logo=python&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-1baf7a?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-1baf7a?style=flat-square&logo=numpy&logoColor=white) ![SciPy and statsmodels](https://img.shields.io/badge/SciPy%20and%20statsmodels-1baf7a?style=flat-square&logo=scipy&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1baf7a?style=flat-square&logo=scikitlearn&logoColor=white) ![PySpark](https://img.shields.io/badge/PySpark-1baf7a?style=flat-square&logo=apachespark&logoColor=white) ![Bootstrap and hypothesis tests](https://img.shields.io/badge/Bootstrap%20and%20hypothesis%20tests-1baf7a?style=flat-square) ![Cross-validation](https://img.shields.io/badge/Cross--validation-1baf7a?style=flat-square) ![LSTM and CNN-LSTM forecasting](https://img.shields.io/badge/LSTM%20and%20CNN--LSTM%20forecasting-1baf7a?style=flat-square) ![Feature engineering](https://img.shields.io/badge/Feature%20engineering-1baf7a?style=flat-square) ![NLP (NLTK, spaCy)](https://img.shields.io/badge/NLP%20%28NLTK%2C%20spaCy%29-1baf7a?style=flat-square) ![Matplotlib](https://img.shields.io/badge/Matplotlib-1baf7a?style=flat-square) ![Seaborn](https://img.shields.io/badge/Seaborn-1baf7a?style=flat-square)
+
+**Used on team projects** (built with teammates; I contributed to parts of the stack)
+
+![Multiple-test correction](https://img.shields.io/badge/Multiple--test%20correction-8a8984?style=flat-square) ![Seed-stability checks](https://img.shields.io/badge/Seed--stability%20checks-8a8984?style=flat-square)
+
+**Where to see it:** [ML fundamentals](https://github.com/vrushabh05/ml-fundamentals-from-scratch) · [Statistics](https://github.com/vrushabh05/statistics-fundamentals) · [PySpark](https://github.com/vrushabh05/pyspark-logistic-regression-rdd-vs-dataframe) · [Airline satisfaction](https://github.com/vrushabh05/airline-satisfaction-classification) · [Wildfire](https://github.com/vrushabh05/wildfire-dynamics-prediction)
+
+</details>
+
+<details>
+<summary><b>Data Analytics</b>: Dashboards, SQL and storytelling</summary>
+
+**Hands-on in my own projects**
+
+![Power BI](https://img.shields.io/badge/Power%20BI-eda100?style=flat-square&logo=powerbi&logoColor=white) ![DAX](https://img.shields.io/badge/DAX-eda100?style=flat-square) ![Tableau](https://img.shields.io/badge/Tableau-eda100?style=flat-square&logo=tableau&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-eda100?style=flat-square&logo=postgresql&logoColor=white) ![Python EDA](https://img.shields.io/badge/Python%20EDA-eda100?style=flat-square&logo=python&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-eda100?style=flat-square&logo=plotly&logoColor=white) ![Forecasting and decomposition](https://img.shields.io/badge/Forecasting%20and%20decomposition-eda100?style=flat-square) ![KPI design](https://img.shields.io/badge/KPI%20design-eda100?style=flat-square) ![Data cleaning](https://img.shields.io/badge/Data%20cleaning-eda100?style=flat-square) ![Data storytelling](https://img.shields.io/badge/Data%20storytelling-eda100?style=flat-square)
+
+**Used on team projects** (built with teammates; I contributed to parts of the stack)
+
+![Admin analytics pages (React)](https://img.shields.io/badge/Admin%20analytics%20pages%20%28React%29-8a8984?style=flat-square&logo=react&logoColor=white)
+
+**Where to see it:** [Global sales](https://github.com/vrushabh05/Global_Sales_Insights-and-Future-Forecasting-with-PowerBI) · [Superstore](https://github.com/vrushabh05/PowerBI_Walmart_Sales-_Dashboard) · [Spotify](https://github.com/vrushabh05/Spotify-Dashboard) · [Superstore EDA](https://github.com/vrushabh05/Exploratory_Data_Analysis_on_Walmart_sales_data)
+
+</details>
+
+<details>
+<summary><b>Forward Deployed Engineering</b>: Shipping systems end to end</summary>
+
+**Hands-on in my own projects**
+
+![React](https://img.shields.io/badge/React-6250d6?style=flat-square&logo=react&logoColor=white) ![Redux](https://img.shields.io/badge/Redux-6250d6?style=flat-square&logo=redux&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-6250d6?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-6250d6?style=flat-square&logo=express&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-6250d6?style=flat-square&logo=fastapi&logoColor=white) ![Kafka](https://img.shields.io/badge/Kafka-6250d6?style=flat-square&logo=apachekafka&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-6250d6?style=flat-square&logo=mongodb&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-6250d6?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-6250d6?style=flat-square&logo=kubernetes&logoColor=white) ![JMeter](https://img.shields.io/badge/JMeter-6250d6?style=flat-square&logo=apachejmeter&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST%20APIs-6250d6?style=flat-square) ![Microservices](https://img.shields.io/badge/Microservices-6250d6?style=flat-square)
+
+**Used on team projects** (built with teammates; I contributed to parts of the stack)
+
+![Next.js](https://img.shields.io/badge/Next.js-8a8984?style=flat-square&logo=nextdotjs&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-8a8984?style=flat-square&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-8a8984?style=flat-square&logo=redis&logoColor=white) ![AWS EKS, ECR, S3](https://img.shields.io/badge/AWS%20EKS%2C%20ECR%2C%20S3-8a8984?style=flat-square&logo=amazonaws&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-8a8984?style=flat-square&logo=githubactions&logoColor=white) ![Airflow](https://img.shields.io/badge/Airflow-8a8984?style=flat-square&logo=apacheairflow&logoColor=white)
+
+**Where to see it:** [Airbnb-style distributed system](https://github.com/vrushabh05/Lab1_distributed_system) · [MetaTravelGrid](#metatravelgrid-travel-booking-platform-team-project) · [MealPilot MCP](https://github.com/vrushabh05/mealpilot-mcp)
+
+</details>
+
+
+> Tools on the grey "team" badges were used inside group projects. I list them as exposure, not as sole ownership. Tools listed under learning or experimentation in the concepts above are not claimed as production experience.
 
 ### Language mix, refreshed daily
 
